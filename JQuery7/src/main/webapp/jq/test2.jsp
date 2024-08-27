@@ -10,9 +10,9 @@
 <!-- Jquery 반드시 라이브러리 추가 (CDN :Content Delivery Network)  -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-$(document).ready(function(){
-	alert(" jquery 실행(1) !");
-});
+	$(document).ready(function(){
+		alert(" jquery 실행(1) !");
+	});
 
 </script>
 
