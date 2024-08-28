@@ -31,6 +31,7 @@
 			//alert(index+"/"+value);
 			return colorArr[index];
 	});
+	
 	$("h2").css('background','black');
 	
 	// 한번에 다양한 속성정보를 변경
@@ -57,8 +58,30 @@
 	
 	$('img').attr("src","btn_nextpage.png");
 	
+	// img 태그에 'border' 속성의 값을 5설정
 	
-		
+	$('img').attr('border',5);
+	
+	// 이미지 마다 다르게 설정 (5,10,15)
+	$('img').attr('border',function(idx,attr){
+		//alert(idx+"/"+attr); 인덱스, 설정된 속성 값
+		return (idx+1)+5;
+	});
+	//가로길이width, 세로길이height, 테두리border 설정을 한번에 처리 
+	//-> 가로길이를 모두 다르게 설정
+	$('img').attr({
+		"width" : function(idx){
+			return (idx+1)+100;
+		},
+		"height" : 100,
+		"border" : 5 
+	});
+	
+	
+	
+	
+	
+	
 });
 
 
