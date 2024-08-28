@@ -126,8 +126,12 @@
 				$("div").append(function(idx) {
 					var item = contentArr[idx];
 					return "- " + item.name + "/" + item.region;
-				}); 
+				});
+			}); //jquery
 			
+			
+			$(function(){
+
 			
 			// jquery
 				
