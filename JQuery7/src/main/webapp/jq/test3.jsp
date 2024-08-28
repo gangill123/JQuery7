@@ -70,7 +70,7 @@
 	//가로길이width, 세로길이height, 테두리border 설정을 한번에 처리 
 	//-> 가로길이를 모두 다르게 설정
 	$('img').attr({
-		"width" : function(idx){
+		"width" :function(idx){
 			return (idx+1)+100;
 		},
 		"height" : 100,
